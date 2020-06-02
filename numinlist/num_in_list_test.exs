@@ -20,7 +20,7 @@ defmodule Numinlist.NumInListTest do
   end
 
   describe "#pattern_match" do
-    test "validates number is in list", context do
+    test "finds number in list", context do
       for {list, num, want} <- context[:tests] do
         assert NumInList.pattern_match(list, num) == want
       end
@@ -28,7 +28,7 @@ defmodule Numinlist.NumInListTest do
   end
 
   describe "std" do
-    test "validates number is in list", context do
+    test "finds number in list", context do
       for {list, num, want} <- context[:tests] do
         assert NumInList.std(list, num) == want
       end

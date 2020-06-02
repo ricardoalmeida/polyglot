@@ -17,7 +17,7 @@ describe NumInList do
   end
 
   describe '#loop' do
-    it 'validates number is in list' do
+    it 'finds number in list' do
       @tests.each do |tc|
         _(NumInList.loop(tc[:list], tc[:num])).must_equal tc[:want]
       end
@@ -25,7 +25,7 @@ describe NumInList do
   end
 
   describe '#recursive' do
-    it 'validates number is in list' do
+    it 'finds number in list' do
       @tests.each do |tc|
         _(NumInList.recursive(tc[:list], tc[:num])).must_equal tc[:want]
       end
@@ -33,7 +33,7 @@ describe NumInList do
   end
 
   describe '#sdt' do
-    it 'validates number is in list' do
+    it 'finds number in list' do
       @tests.each do |tc|
         _(NumInList.std(tc[:list], tc[:num])).must_equal tc[:want]
       end
