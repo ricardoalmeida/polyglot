@@ -8,6 +8,10 @@ Methods are named based on type of solution: iterate (for loops), recursive, pat
 
 ## Running tests
 
+### All tests
+
+`rake -m test`. Use -v for verbose mode.
+
 ### Golang
 
 `go test ./... -v`
@@ -20,6 +24,10 @@ Methods are named based on type of solution: iterate (for loops), recursive, pat
 
 `mix test`
 
-### Typescript & Deno
+### Deno & Typescript
 
 `deno test **/*_test.ts`
+
+### Rust
+
+`cargo test`

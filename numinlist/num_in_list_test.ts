@@ -11,13 +11,13 @@ const tests: { list: number[]; num: number; want: boolean }[] = [
   { list: [-1, -1, -1, -1, -1, -1, -1, -1], num: 1, want: false },
 ];
 
-Deno.test("finds number in list", () => {
+Deno.test("iterate finds number in list", () => {
   tests.forEach((tc) => {
     assertEquals(iterate(tc.list, tc.num), tc.want);
   });
 });
 
-Deno.test("finds number in list", () => {
+Deno.test("std finds number in list", () => {
   tests.forEach((tc) => {
     assertEquals(std(tc.list, tc.num), tc.want);
   });
