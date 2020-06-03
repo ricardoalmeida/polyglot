@@ -18,7 +18,7 @@ Method names are named based on type of solution: iterate (for loops), recursive
 
 `mix test`
 
-### Deno & Typescript
+### Deno & TypeScript
 
 `deno test **/*_test.ts`
 
