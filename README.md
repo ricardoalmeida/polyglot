@@ -12,7 +12,7 @@ Method names are named based on type of solution: iterate (for loops), recursive
 
 ### Ruby
 
-`ruby **/test_*.rb -v`
+`bundle exec rake test TESTOPTS='-v'`
 
 ### Elixir
 
@@ -28,4 +28,4 @@ Method names are named based on type of solution: iterate (for loops), recursive
 
 #### All tests
 
-`rake -m polyglot:test -v`.
+`bundle exec rake -m polyglot -v`.

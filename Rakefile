@@ -39,10 +39,8 @@ task :rust do |t|
   end
 end
 
-namespace :polyglot do
-  multitask test: %i[go elixir ruby typescript rust] do
-    puts 'Run all tests together.'
-  end
+multitask polyglot: %i[go elixir ruby typescript rust] do
+  puts 'Run all tests together.'
 end
 
 def info(lang)
