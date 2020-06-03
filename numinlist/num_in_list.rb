@@ -2,7 +2,7 @@
 
 # NumInList
 class NumInList
-  def self.loop(list, num)
+  def self.iterate(list, num)
     list.each do |n|
       return true if n == num
     end

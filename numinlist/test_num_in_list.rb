@@ -16,10 +16,10 @@ describe NumInList do
     ]
   end
 
-  describe '#loop' do
+  describe '#iterate' do
     it 'finds number in list' do
       @tests.each do |tc|
-        _(NumInList.loop(tc[:list], tc[:num])).must_equal tc[:want]
+        _(NumInList.iterate(tc[:list], tc[:num])).must_equal tc[:want]
       end
     end
   end

@@ -1,4 +1,4 @@
-ExUnit.start()
+ExUnit.start(trace: true)
 Code.require_file("numinlist/num_in_list.ex")
 
 defmodule Numinlist.NumInListTest do

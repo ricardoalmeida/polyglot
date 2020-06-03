@@ -4,7 +4,7 @@ Algorithms in A, B and C just for fun! _へ__(‾◡◝ )>
 
 ## Method names
 
-Methods are named based on type of solution: loop, recursive, pattern_match, std (standard api)
+Methods are named based on type of solution: iterate (for loops), recursive, pattern_match, std (standard api)
 
 ## Running tests
 
@@ -14,7 +14,7 @@ Methods are named based on type of solution: loop, recursive, pattern_match, std
 
 ### Ruby
 
-`ruby **/test_*.rb`
+`ruby **/test_*.rb -v`
 
 ### Elixir
 

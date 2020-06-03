@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestNumInList(t *testing.T) {
+func TestIterate(t *testing.T) {
 	tests := []struct {
 		list []int
 		num  int
@@ -40,9 +40,9 @@ func TestNumInList(t *testing.T) {
 	}
 	for _, tc := range tests {
 		t.Run(fmt.Sprintf("(%v,%v)", tc.list, tc.num), func(t *testing.T) {
-			got := NumInList(tc.list, tc.num)
+			got := Iterate(tc.list, tc.num)
 			if got != tc.want {
-				t.Fatalf("NumInList() = %v; want %v", got, tc.want)
+				t.Fatalf("Iterate() = %v; want %v", got, tc.want)
 			}
 		})
 	}
