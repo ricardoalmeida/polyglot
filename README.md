@@ -2,15 +2,9 @@
 
 Algorithms in A, B and C just for fun! _へ__(‾◡◝ )>
 
-## Method names
-
-Methods are named based on type of solution: iterate (for loops), recursive, pattern_match, std (standard api)
+Method names are named based on type of solution: iterate (for loops), recursive, pattern_match, std (standard api)
 
 ## Running tests
-
-### All tests
-
-`rake -m test`. Use -v for verbose mode.
 
 ### Golang
 
@@ -31,3 +25,7 @@ Methods are named based on type of solution: iterate (for loops), recursive, pat
 ### Rust
 
 `cargo test`
+
+#### All tests
+
+`rake -m polyglot:test -v`.

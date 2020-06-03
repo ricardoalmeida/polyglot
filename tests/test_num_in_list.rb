@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require './test_helper.rb'
-require './numinlist/num_in_list.rb'
+require 'test_helper'
+require 'numinlist/num_in_list'
 
 describe NumInList do
   def setup

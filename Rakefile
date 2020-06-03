@@ -1,5 +1,14 @@
 # frozen_string_literal: true
 
+require 'rake/testtask'
+
+task default: 'test'
+Rake::TestTask.new do |t|
+  t.libs << 'test'
+  t.libs << 'src'
+  t.test_files = FileList['test/**/test_*.rb']
+end
+
 task :go do |t|
   info(t.name) do |option|
     system "go test ./... #{option}"
@@ -14,7 +23,7 @@ end
 
 task :ruby do |t|
   info(t.name) do |option|
-    system "ruby **/test_*.rb #{option}"
+    system "rake test #{option}"
   end
 end
 
@@ -30,14 +39,16 @@ task :rust do |t|
   end
 end
 
-multitask test: %i[go elixir ruby typescript rust] do
-  puts 'Run all tests together.'
+namespace :polyglot do
+  multitask test: %i[go elixir ruby typescript rust] do
+    puts 'Run all tests together.'
+  end
 end
 
 def info(lang)
   if verbose == true
     puts " >>>>>>>>>>>>>>>> #{lang} Started"
-    option = '-v'
+    option = lang == 'ruby' ? "TESTOPTS='-v'" : '-v'
   end
   yield(option)
   puts " <<<<<<<<<<<<<<<< #{lang} Finished", '' if verbose == true
