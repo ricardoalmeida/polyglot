@@ -1,5 +1,5 @@
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
-import { iterate, std } from "./num_in_list.ts";
+import { iterate, std } from "../src/numinlist/num_in_list.ts";
 
 const tests: { list: number[]; num: number; want: boolean }[] = [
   { list: [1, 2, 3, 4, 5], num: 1, want: true },

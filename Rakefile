@@ -11,31 +11,31 @@ end
 
 task :go do |t|
   info(t.name) do |option|
-    system "go test ./... #{option}"
+    sh "go test ./... #{option}"
   end
 end
 
 task :elixir do |t|
   info(t.name) do |_option|
-    system 'mix test'
+    sh 'mix test'
   end
 end
 
 task :ruby do |t|
   info(t.name) do |option|
-    system "rake test #{option}"
+    sh "rake test #{option}"
   end
 end
 
 task :typescript do |t|
   info(t.name) do |_option|
-    system 'deno test **/*_test.ts'
+    sh 'deno test test/**_test.ts'
   end
 end
 
 task :rust do |t|
   info(t.name) do |_option|
-    system 'cargo test'
+    sh 'cargo test'
   end
 end
 
