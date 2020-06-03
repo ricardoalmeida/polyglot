@@ -1,5 +1,4 @@
-ExUnit.start(trace: true)
-Code.require_file("numinlist/num_in_list.ex")
+Code.require_file("src/numinlist/num_in_list.ex")
 
 defmodule Numinlist.NumInListTest do
   use ExUnit.Case, async: true

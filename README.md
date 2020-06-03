@@ -18,7 +18,7 @@ Methods are named based on type of solution: iterate (for loops), recursive, pat
 
 ### Elixir
 
-`elixir **/*_test.exs`
+`mix test`
 
 ### Typescript & Deno
 
