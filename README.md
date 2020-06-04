@@ -29,3 +29,12 @@ Method names are named based on type of solution: iterate (for loops), recursive
 #### All tests
 
 `bundle exec rake -m polyglot -v`.
+
+## Talk to Polyglot
+
+Try this:
+
+```sh
+iex -S mix
+iex(1)> Polyglot.hello_favorite_language()
+```
