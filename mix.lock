@@ -1,0 +1,4 @@
+%{
+  "exmoji": {:hex, :exmoji, "0.2.2", "fae4e012d3b78771436d19ff8922219bd93d9115364226da5cc5d4703d5d879f", [:mix], [{:poison, "~> 1.5", [hex: :poison, repo: "hexpm", optional: false]}], "hexpm", "d0123ec6fd14506da93b0e8fdb7c2efa819cc69addeb56a78f3c1e0b8a09d015"},
+  "poison": {:hex, :poison, "1.5.2", "560bdfb7449e3ddd23a096929fb9fc2122f709bcc758b2d5d5a5c7d0ea848910", [:mix], [], "hexpm", "4afc59dcadf71be7edc8b934b39f554ec7b31e2b1b1a4767383a663f86958ce3"},
+}
