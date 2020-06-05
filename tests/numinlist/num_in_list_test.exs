@@ -19,16 +19,16 @@ defmodule Numinlist.NumInListTest do
   end
 
   describe "#pattern_match" do
-    test "finds number in list", context do
-      for {list, num, want} <- context[:tests] do
+    test "finds number in list", %{tests: tests} do
+      for {list, num, want} <- tests do
         assert NumInList.pattern_match(list, num) == want
       end
     end
   end
 
   describe "std" do
-    test "finds number in list", context do
-      for {list, num, want} <- context[:tests] do
+    test "finds number in list", %{tests: tests} do
+      for {list, num, want} <- tests do
         assert NumInList.std(list, num) == want
       end
     end

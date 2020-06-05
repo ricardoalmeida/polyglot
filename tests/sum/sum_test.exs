@@ -27,16 +27,16 @@ defmodule Sum.SumTest do
   end
 
   describe "#pattern_match" do
-    test "sum itens of an array", context do
-      for [list, want] <- context[:tests] do
+    test "sum itens of an array", %{tests: tests} do
+      for [list, want] <- tests do
         assert Sum.pattern_match(list) == want
       end
     end
   end
 
   describe "#std" do
-    test "sum itens of an array", context do
-      for [list, want] <- context[:tests] do
+    test "sum itens of an array", %{tests: tests} do
+      for [list, want] <- tests do
         assert Sum.std(list) == want
       end
     end
