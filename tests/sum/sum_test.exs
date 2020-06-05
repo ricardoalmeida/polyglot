@@ -27,7 +27,7 @@ defmodule Sum.SumTest do
   end
 
   describe "#pattern_match" do
-    test "sum itens of an array", %{tests: tests} do
+    test "sum items of an array", %{tests: tests} do
       for [list, want] <- tests do
         assert Sum.pattern_match(list) == want
       end
@@ -35,7 +35,7 @@ defmodule Sum.SumTest do
   end
 
   describe "#std" do
-    test "sum itens of an array", %{tests: tests} do
+    test "sum items of an array", %{tests: tests} do
       for [list, want] <- tests do
         assert Sum.std(list) == want
       end

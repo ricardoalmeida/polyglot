@@ -1,4 +1,7 @@
-export const iterate = (list: number[], num: number) => {
+export const iterate: (list: number[], num: number) => boolean = (
+  list,
+  num,
+) => {
   for (let n of list) {
     if (n === num) {
       return true;
@@ -7,6 +10,6 @@ export const iterate = (list: number[], num: number) => {
   return false;
 };
 
-export const std = (list: number[], num: number) => {
+export const std: (list: number[], num: number) => boolean = (list, num) => {
   return list.includes(num);
 };
