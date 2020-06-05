@@ -1,10 +1,18 @@
 use polyglot::sum::sum::iterate;
+use polyglot::sum::sum::recursive;
 use polyglot::sum::sum::std;
 
 #[test]
 fn iterate_sum() {
     for (numbers, want) in TESTS {
         assert_eq!(iterate(numbers), *want);
+    }
+}
+
+#[test]
+fn recursive_sum() {
+    for (numbers, want) in TESTS {
+        assert_eq!(recursive(numbers), *want);
     }
 }
 
