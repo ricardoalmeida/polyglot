@@ -1,4 +1,4 @@
-Code.require_file("src/sum/sum.ex")
+Code.require_file("sum/sum.ex", "src")
 
 defmodule Sum.SumTest do
   use ExUnit.Case, async: true
