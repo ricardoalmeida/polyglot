@@ -1,5 +1,4 @@
-use polyglot::reverse::reverse::iterate;
-use polyglot::reverse::reverse::std;
+use polyglot::{reverse::reverse::iterate, reverse::reverse::std};
 
 #[test]
 fn test_iterate_reverse_string() {

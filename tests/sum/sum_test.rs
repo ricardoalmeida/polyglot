@@ -1,6 +1,4 @@
-use polyglot::sum::sum::iterate;
-use polyglot::sum::sum::recursive;
-use polyglot::sum::sum::std;
+use polyglot::{sum::sum::iterate, sum::sum::recursive, sum::sum::std};
 
 #[test]
 fn test_iterate_sum() {

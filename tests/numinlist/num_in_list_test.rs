@@ -1,5 +1,4 @@
-use polyglot::numinlist::num_in_list::iterate;
-use polyglot::numinlist::num_in_list::std;
+use polyglot::{numinlist::num_in_list::iterate, numinlist::num_in_list::std};
 
 #[test]
 fn test_iterate_find_num_in_list() {
