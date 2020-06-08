@@ -16,7 +16,7 @@ describe NumInList do
     ]
   end
 
-  describe '#iterate' do
+  describe '.iterate' do
     it 'finds number in list' do
       @tests.each do |tc|
         _(NumInList.iterate(tc[:list], tc[:num])).must_equal tc[:want]
@@ -24,7 +24,7 @@ describe NumInList do
     end
   end
 
-  describe '#recursive' do
+  describe '.recursive' do
     it 'finds number in list' do
       @tests.each do |tc|
         _(NumInList.recursive(tc[:list], tc[:num])).must_equal tc[:want]
@@ -32,7 +32,7 @@ describe NumInList do
     end
   end
 
-  describe '#sdt' do
+  describe '.sdt' do
     it 'finds number in list' do
       @tests.each do |tc|
         _(NumInList.std(tc[:list], tc[:num])).must_equal tc[:want]
