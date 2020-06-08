@@ -13,7 +13,7 @@ class NumInList
     return false if list.empty?
     return true if list.first == num
 
-    recursive(list[1..-1], num)
+    recursive(list[1..], num)
   end
 
   def self.std(list, num)

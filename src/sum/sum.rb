@@ -13,7 +13,7 @@ class Sum
   def self.recursive(list)
     return 0 if list.empty?
 
-    list.first + iterate(list[1..])
+    list.first + recursive(list[1..])
   end
 
   def self.std(list)
