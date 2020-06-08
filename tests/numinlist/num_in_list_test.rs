@@ -2,14 +2,14 @@ use polyglot::numinlist::num_in_list::iterate;
 use polyglot::numinlist::num_in_list::std;
 
 #[test]
-fn iterate_finds_number_in_list() {
+fn test_iterate_find_num_in_list() {
     for (list, num, want) in TESTS {
         assert_eq!(iterate(list, *num), *want);
     }
 }
 
 #[test]
-fn std_finds_number_in_list() {
+fn test_std_find_num_in_list() {
     for (list, num, want) in TESTS {
         assert_eq!(std(list, *num), *want);
     }

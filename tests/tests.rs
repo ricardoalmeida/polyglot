@@ -5,3 +5,7 @@ mod numinlist {
 mod sum {
     mod sum_test;
 }
+
+mod reverse {
+    mod reverse_test;
+}

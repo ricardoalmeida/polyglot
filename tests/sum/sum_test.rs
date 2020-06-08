@@ -3,21 +3,21 @@ use polyglot::sum::sum::recursive;
 use polyglot::sum::sum::std;
 
 #[test]
-fn iterate_sum() {
+fn test_iterate_sum() {
     for (numbers, want) in TESTS {
         assert_eq!(iterate(numbers), *want);
     }
 }
 
 #[test]
-fn recursive_sum() {
+fn test_recursive_sum() {
     for (numbers, want) in TESTS {
         assert_eq!(recursive(numbers), *want);
     }
 }
 
 #[test]
-fn std_sum() {
+fn test_std_sum() {
     for (numbers, want) in TESTS {
         assert_eq!(std(numbers), *want);
     }
