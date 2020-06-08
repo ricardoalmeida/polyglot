@@ -38,3 +38,13 @@ Try this:
 iex -S mix
 iex(1)> Polyglot.hello_favorite_language()
 ```
+
+## Keep versions up to date (macOS)
+
+```sh
+brew update && brew upgrade elixir erlang deno go ruby-build
+```
+
+```sh
+rustup update
+```
