@@ -4,9 +4,7 @@
 class Sum
   def self.iterate(list)
     sum = 0
-    list.each do |n|
-      sum += n
-    end
+    list.each { |n| sum += n }
     sum
   end
 

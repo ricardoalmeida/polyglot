@@ -3,9 +3,7 @@
 # NumInList
 class NumInList
   def self.iterate(list, num)
-    list.each do |n|
-      return true if n == num
-    end
+    list.each { |n| return true if n == num }
     false
   end
 
