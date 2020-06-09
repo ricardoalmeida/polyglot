@@ -1,6 +1,6 @@
 pub fn iterate(word: &'static str) -> String {
     let mut res = String::from("");
-    for w in word.chars(){
+    for w in word.chars() {
         res.insert(0, w)
     }
     res
