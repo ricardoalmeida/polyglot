@@ -9,3 +9,7 @@ mod sum {
 mod reverse {
     mod reverse_test;
 }
+
+mod fizzbuzz {
+    mod fizz_buzz_test;
+}
