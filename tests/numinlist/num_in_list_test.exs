@@ -1,5 +1,3 @@
-Code.require_file("numinlist/num_in_list.ex", "src")
-
 defmodule Numinlist.NumInListTest do
   use ExUnit.Case, async: true
   alias Numinlist.NumInList

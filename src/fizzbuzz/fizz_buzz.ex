@@ -1,4 +1,6 @@
 defmodule Fizzbuzz.FizzBuzz do
+  def pattern_match(1), do: fizz_buzz(1) <> "\n"
+
   def pattern_match(num) do
     sep = ", "
     pattern_match(num - 1, sep) <> sep <> fizz_buzz(num) <> "\n"

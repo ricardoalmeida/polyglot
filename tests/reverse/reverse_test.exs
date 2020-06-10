@@ -1,5 +1,3 @@
-Code.require_file("reverse/reverse.ex", "src")
-
 defmodule Reverse.ReverseTest do
   use ExUnit.Case, async: true
   alias Reverse.Reverse
@@ -16,7 +14,7 @@ defmodule Reverse.ReverseTest do
 
   describe "pattern_match" do
     test "reverse word", %{tests: tests} do
-      for [word, want] <- tests do
+      for {word, want} <- tests do
         assert Reverse.pattern_match(word) == want
       end
     end
@@ -24,7 +22,7 @@ defmodule Reverse.ReverseTest do
 
   describe "std" do
     test "reverse word", %{tests: tests} do
-      for [word, want] <- tests do
+      for {word, want} <- tests do
         assert Reverse.std(word) == want
       end
     end
