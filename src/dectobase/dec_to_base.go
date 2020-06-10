@@ -1,12 +1,17 @@
 package dectobase
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+	"strings"
+)
 
 // Iterate :
 func Iterate(dec, base int) string {
+	const charset = "0123456789ABCDEF"
 	var result string
 	for dec > 0 {
-		result = fmt.Sprintf("%v%s", charset(dec%base), result)
+		result = fmt.Sprintf("%c%v", charset[dec%base], result)
 		dec /= base
 	}
 	return result
@@ -14,14 +19,14 @@ func Iterate(dec, base int) string {
 
 // Recursive :
 func Recursive(dec, base int) string {
-	rem := charset(dec % base)
-	if dec/base == 0 {
-		return rem
+	var result string
+	if div := dec / base; div > 0 {
+		result = Recursive(div, base)
 	}
-	return fmt.Sprintf("%v%v", Recursive(dec/base, base), rem)
+	return fmt.Sprintf("%v%X", result, dec%base)
 }
 
-func charset(num int) string {
-	const charset = "0123456789ABCDEF"
-	return string(charset[num])
+// Std :
+func Std(dec, base int) string {
+	return strings.ToUpper(strconv.FormatInt(int64(dec), base))
 }

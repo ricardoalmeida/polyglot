@@ -28,6 +28,17 @@ func TestRecursive(t *testing.T) {
 	}
 }
 
+func TestStd(t *testing.T) {
+	for _, tc := range tests {
+		t.Run(fmt.Sprintf("%v to base %v", tc.dec, tc.base), func(t *testing.T) {
+			got := dectobase.Std(tc.dec, tc.base)
+			if got != tc.want {
+				t.Fatalf("Std() = %v; want %v", got, tc.want)
+			}
+		})
+	}
+}
+
 var tests = []struct {
 	dec, base int
 	want      string
