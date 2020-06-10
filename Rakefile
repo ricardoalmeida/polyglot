@@ -1,41 +1,32 @@
 # frozen_string_literal: true
 
-require 'rake/testtask'
-
-task default: 'test'
-Rake::TestTask.new do |t|
-  t.libs << 'test'
-  t.libs << 'src'
-  t.test_files = FileList['test/**/*_test.rb']
-end
-
 task :go do |t|
   info(t.name) do |option|
-    sh "go test ./... #{option}"
+    sh "cd go && go test ./... #{option}"
   end
 end
 
 task :elixir do |t|
   info(t.name) do |_option|
-    sh 'mix test'
+    sh 'cd elixir && mix test'
   end
 end
 
 task :ruby do |t|
   info(t.name) do |option|
-    sh "rake test #{option}"
+    sh "cd ruby && rake test #{option}"
   end
 end
 
 task :typescript do |t|
   info(t.name) do |_option|
-    sh 'deno test test/**/*_test.ts'
+    sh 'cd typescript && deno test tests/**/*_test.ts'
   end
 end
 
 task :rust do |t|
   info(t.name) do |_option|
-    sh 'cargo test'
+    sh 'cd rust && cargo test'
   end
 end
 

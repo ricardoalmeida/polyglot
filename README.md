@@ -28,7 +28,7 @@ rustup update
 
 ## Running all tests
 
-`bundle exec rake -m polyglot (-v)`. Verbose is optional.
+`rake -m polyglot (-v)`. Verbose is optional.
 
 ### Running specific tests
 
@@ -57,6 +57,7 @@ rustup update
 Try this:
 
 ```sh
+cd elixir
 iex -S mix
 iex(1)> Polyglot.hello_favorite_language()
 ```
