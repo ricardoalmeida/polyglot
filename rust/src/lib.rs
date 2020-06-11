@@ -13,3 +13,7 @@ pub mod reverse {
 pub mod fizzbuzz {
     pub mod fizz_buzz;
 }
+
+pub mod dectobase {
+    pub mod dec_to_base;
+}

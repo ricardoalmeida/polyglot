@@ -13,3 +13,7 @@ mod reverse {
 mod fizzbuzz {
     mod fizz_buzz_test;
 }
+
+mod dectobase {
+    mod dec_to_base_test;
+}
