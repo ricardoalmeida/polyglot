@@ -7,8 +7,8 @@ defmodule Dectobase.DecToBase do
     pattern_match(div(num, base), base) <> chat_at(rem(num, base))
   end
 
-  defp chat_at(num) do
-    String.at("0123456789ABCDEF", num)
+  defp chat_at(pos) do
+    String.at("0123456789ABCDEF", pos)
   end
 
   def std(num, base) do
