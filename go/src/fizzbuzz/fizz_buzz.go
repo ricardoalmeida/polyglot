@@ -1,5 +1,7 @@
 package fizzbuzz
 
+// https://github.com/joncalhoun/algorithmswithgo.com/tree/master/module01#08---fizzbuzz-code
+
 import (
 	"fmt"
 )

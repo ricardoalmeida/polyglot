@@ -1,5 +1,7 @@
 package sum
 
+// https://github.com/joncalhoun/algorithmswithgo.com/tree/master/module01#06---sum-all-the-numbers-in-a-list-code
+
 // Iterate :
 func Iterate(numbers []int) int {
 	result := 0

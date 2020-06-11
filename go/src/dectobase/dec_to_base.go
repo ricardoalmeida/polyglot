@@ -1,5 +1,7 @@
 package dectobase
 
+// https://github.com/joncalhoun/algorithmswithgo.com/tree/master/module01#09---decimal-to-another-base-code
+
 import (
 	"fmt"
 	"strconv"
