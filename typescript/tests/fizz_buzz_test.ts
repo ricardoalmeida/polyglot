@@ -2,12 +2,12 @@ import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 import { iterate } from "../src/fizz_buzz.ts";
 
 Deno.test("returns fizz buzz", () => {
-  for (const tc of tests) {
+  for (const tc of TESTS) {
     assertEquals(iterate(tc.num), tc.want);
   }
 });
 
-const tests = [
+const TESTS = [
   { num: 1, want: "1\n" },
   { num: 2, want: "1, 2\n" },
   { num: 3, want: "1, 2, Fizz\n" },

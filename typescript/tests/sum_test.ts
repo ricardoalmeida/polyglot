@@ -1,7 +1,25 @@
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 import { iterate, recursive, std } from "../src/sum.ts";
 
-const tests: { list: number[]; want: number }[] = [
+Deno.test("iterate sum items of an array", () => {
+  TESTS.forEach((tc) => {
+    assertEquals(iterate(tc.list), tc.want);
+  });
+});
+
+Deno.test("recursive sum items of an array", () => {
+  TESTS.forEach((tc) => {
+    assertEquals(recursive(tc.list), tc.want);
+  });
+});
+
+Deno.test("std sum items of an array", () => {
+  TESTS.forEach((tc) => {
+    assertEquals(std(tc.list), tc.want);
+  });
+});
+
+const TESTS: { list: number[]; want: number }[] = [
   { list: [1], want: 1 },
   { list: [1, 2], want: 3 },
   { list: [1, 2, 3, 4, 5], want: 15 },
@@ -18,21 +36,3 @@ const tests: { list: number[]; want: number }[] = [
   { list: [14, 39, 18, 39, 3, 29, 8, 29], want: 179 },
   { list: [-95, -46, -65, -63, 10], want: -259 },
 ];
-
-Deno.test("iterate sum items of an array", () => {
-  tests.forEach((tc) => {
-    assertEquals(iterate(tc.list), tc.want);
-  });
-});
-
-Deno.test("recursive sum items of an array", () => {
-  tests.forEach((tc) => {
-    assertEquals(recursive(tc.list), tc.want);
-  });
-});
-
-Deno.test("std sum items of an array", () => {
-  tests.forEach((tc) => {
-    assertEquals(std(tc.list), tc.want);
-  });
-});

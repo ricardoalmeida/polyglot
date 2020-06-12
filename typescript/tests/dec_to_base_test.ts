@@ -2,24 +2,24 @@ import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 import { iterate, std, recursive } from "../src/dec_to_base.ts";
 
 Deno.test("iterate converts dec to base", () => {
-  for (const tc of tests) {
+  for (const tc of TESTS) {
     assertEquals(iterate(tc.dec, tc.base), tc.want);
   }
 });
 
 Deno.test("recursive converts dec to base", () => {
-  for (const tc of tests) {
+  for (const tc of TESTS) {
     assertEquals(recursive(tc.dec, tc.base), tc.want);
   }
 });
 
 Deno.test("std converts dec to base", () => {
-  for (const tc of tests) {
+  for (const tc of TESTS) {
     assertEquals(std(tc.dec, tc.base), tc.want);
   }
 });
 
-const tests = [
+const TESTS = [
   { dec: 1, base: 2, want: "1" },
   { dec: 2, base: 2, want: "10" },
   { dec: 7, base: 3, want: "21" },
