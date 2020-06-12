@@ -1,39 +1,39 @@
-package dectobase_test
+package basetobase_test
 
 import (
 	"fmt"
-	"github/ricardoalmeida/polyglot/src/dectobase"
+	"github/ricardoalmeida/polyglot/src/basetobase"
 	"testing"
 )
 
-func TestIterate(t *testing.T) {
+func TestDecToBaseIterate(t *testing.T) {
 	for _, tc := range tests {
 		t.Run(fmt.Sprintf("%v to base %v", tc.dec, tc.base), func(t *testing.T) {
-			got := dectobase.Iterate(tc.dec, tc.base)
+			got := basetobase.DecToBaseIterate(tc.dec, tc.base)
 			if got != tc.want {
-				t.Fatalf("Iterate() = %v; want %v", got, tc.want)
+				t.Fatalf("DecToBaseIterate() = %v; want %v", got, tc.want)
 			}
 		})
 	}
 }
 
-func TestRecursive(t *testing.T) {
+func TestDecToBaseRecursive(t *testing.T) {
 	for _, tc := range tests {
 		t.Run(fmt.Sprintf("%v to base %v", tc.dec, tc.base), func(t *testing.T) {
-			got := dectobase.Recursive(tc.dec, tc.base)
+			got := basetobase.DecToBaseRecursive(tc.dec, tc.base)
 			if got != tc.want {
-				t.Fatalf("Recursive() = %v; want %v", got, tc.want)
+				t.Fatalf("DecToBaseRecursive() = %v; want %v", got, tc.want)
 			}
 		})
 	}
 }
 
-func TestStd(t *testing.T) {
+func TestDecToBaseStd(t *testing.T) {
 	for _, tc := range tests {
 		t.Run(fmt.Sprintf("%v to base %v", tc.dec, tc.base), func(t *testing.T) {
-			got := dectobase.Std(tc.dec, tc.base)
+			got := basetobase.DecToBaseStd(tc.dec, tc.base)
 			if got != tc.want {
-				t.Fatalf("Std() = %v; want %v", got, tc.want)
+				t.Fatalf("DecToBaseStd() = %v; want %v", got, tc.want)
 			}
 		})
 	}

@@ -1,4 +1,4 @@
-package basetodec
+package basetobase
 
 import "fmt"
 
@@ -6,8 +6,8 @@ import "fmt"
 
 const charset = "0123456789ABCDEF"
 
-// Iterate :
-func Iterate(value string, base int) int {
+// BaseToDecIterate :
+func BaseToDecIterate(value string, base int) int {
 	res := 0
 	multiplier := 1
 	for i := len(value) - 1; i >= 0; i-- {
@@ -27,8 +27,8 @@ func Iterate(value string, base int) int {
 	return res
 }
 
-// Std :
-func Std(value string, base int) int {
+// BaseToDecStd :
+func BaseToDecStd(value string, base int) int {
 	res := 0
 	multiplier := 1
 	for i := len(value) - 1; i >= 0; i-- {

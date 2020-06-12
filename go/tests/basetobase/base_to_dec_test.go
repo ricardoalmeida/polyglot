@@ -1,34 +1,34 @@
-package basetodec_test
+package basetobase_test
 
 import (
 	"fmt"
-	"github/ricardoalmeida/polyglot/src/basetodec"
+	"github/ricardoalmeida/polyglot/src/basetobase"
 	"testing"
 )
 
-func TestIterate(t *testing.T) {
-	for _, tc := range tests {
+func TestBaseToDecIterate(t *testing.T) {
+	for _, tc := range testsBaseToDec {
 		t.Run(fmt.Sprintf("%v in base %v", tc.have, tc.base), func(t *testing.T) {
-			got := basetodec.Iterate(tc.have, tc.base)
+			got := basetobase.BaseToDecIterate(tc.have, tc.base)
 			if got != tc.want {
-				t.Fatalf("Iterate() = %v; want %v", got, tc.want)
+				t.Fatalf("BaseToDecIterate() = %v; want %v", got, tc.want)
 			}
 		})
 	}
 }
 
-func TestStd(t *testing.T) {
-	for _, tc := range tests {
+func TestBaseToDecStd(t *testing.T) {
+	for _, tc := range testsBaseToDec {
 		t.Run(fmt.Sprintf("%v in base %v", tc.have, tc.base), func(t *testing.T) {
-			got := basetodec.Std(tc.have, tc.base)
+			got := basetobase.BaseToDecStd(tc.have, tc.base)
 			if got != tc.want {
-				t.Fatalf("Std() = %v; want %v", got, tc.want)
+				t.Fatalf("BaseToDecStd() = %v; want %v", got, tc.want)
 			}
 		})
 	}
 }
 
-var tests = []struct {
+var testsBaseToDec = []struct {
 	want, base int
 	have       string
 }{
