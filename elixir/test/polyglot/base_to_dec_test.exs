@@ -37,4 +37,12 @@ defmodule Polyglot.BaseToDecTest do
       end
     end
   end
+
+  describe "std" do
+    test "converts value to dec", %{tests: tests} do
+      for {want, base, have} <- tests do
+        assert BaseToDec.std(have, base) == want
+      end
+    end
+  end
 end

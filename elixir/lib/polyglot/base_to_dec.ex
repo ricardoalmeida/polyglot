@@ -10,4 +10,8 @@ defmodule Polyglot.BaseToDec do
 
     index * multiplier + pattern_match(value, base, multiplier * base, pos - 1)
   end
+
+  def std(value, base) do
+    String.to_integer(value, base)
+  end
 end
