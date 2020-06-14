@@ -1,3 +1,4 @@
+pub mod base_to_base;
 pub mod base_to_dec;
 pub mod dec_to_base;
 pub mod fizz_buzz;
