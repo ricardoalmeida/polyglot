@@ -4,10 +4,9 @@ import "fmt"
 
 // https://github.com/joncalhoun/algorithmswithgo.com/tree/master/module01#10---another-base-to-decimal-code
 
-const charset = "0123456789ABCDEF"
-
 // BaseToDecIterate :
 func BaseToDecIterate(value string, base int) int {
+	const charset = "0123456789ABCDEF"
 	res := 0
 	multiplier := 1
 	for i := len(value) - 1; i >= 0; i-- {
@@ -19,7 +18,7 @@ func BaseToDecIterate(value string, base int) int {
 			}
 		}
 		if index < 0 {
-			panic("something went wong!")
+			panic("something went wrong!")
 		}
 		res += index * multiplier
 		multiplier *= base

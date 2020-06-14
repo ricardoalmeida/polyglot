@@ -10,7 +10,7 @@ export const iterate: (value: string, base: number) => number = (
   let index: number = -1;
   for (let i = value.length - 1; i >= 0; i--) {
     index = CHARSET.indexOf(value[i]);
-    if (index === -1) throw new Error("something went wong!");
+    if (index === -1) throw new Error("something went wrong!");
 
     res += index * multiplier;
     multiplier *= base;
