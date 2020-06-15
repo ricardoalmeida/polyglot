@@ -28,7 +28,7 @@ rustup update
 
 ## Running all tests
 
-`rake -m polyglot (-v)`. Verbose is optional.
+`make -j polyglot`
 
 ### Running specific tests
 
@@ -46,7 +46,7 @@ rustup update
 
 #### Deno & TypeScript
 
-`deno test **/*_test.ts`
+`deno test`
 
 #### Rust
 
