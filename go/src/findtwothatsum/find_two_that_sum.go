@@ -4,7 +4,7 @@ package findtwothatsum
 func FindTwoThatSum(numbers []int, sum int) (int, int) {
 	for i, first := range numbers {
 		for j, second := range numbers {
-			if i <= j {
+			if j <= i {
 				continue
 			}
 			if first+second == sum {
