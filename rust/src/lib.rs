@@ -5,3 +5,4 @@ pub mod fizz_buzz;
 pub mod num_in_list;
 pub mod reverse;
 pub mod sum;
+pub mod find_two_that_sum;

@@ -2,9 +2,9 @@ use polyglot::fizz_buzz::iterate;
 
 #[test]
 fn test_fizz_buzz() {
-	for (num, want) in TESTS {
-		assert_eq!(iterate(*num), *want);
-	}
+    for (num, want) in TESTS {
+        assert_eq!(iterate(*num), *want);
+    }
 }
 
 const TESTS: &[(i32, &'static str)] = &[
