@@ -19,7 +19,7 @@ defmodule Polyglot.MixProject do
 
   defp deps do
     [
-      {:exmoji, "~> 0.2.2"}
+      {:exmoji, "~> 0.3.0"}
     ]
   end
 end
