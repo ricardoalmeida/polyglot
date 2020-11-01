@@ -2,7 +2,7 @@ package findtwothatsum_test
 
 import (
 	"fmt"
-	"github/ricardoalmeida/polyglot/src/findtwothatsum"
+	"github/ricardoalmeida/polyglot/go/src/findtwothatsum"
 	"testing"
 )
 

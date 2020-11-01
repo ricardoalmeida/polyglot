@@ -2,7 +2,7 @@ package reverse_test
 
 import (
 	"fmt"
-	"github/ricardoalmeida/polyglot/src/reverse"
+	"github/ricardoalmeida/polyglot/go/src/reverse"
 	"testing"
 )
 

@@ -2,7 +2,7 @@ package basetobase_test
 
 import (
 	"fmt"
-	"github/ricardoalmeida/polyglot/src/basetobase"
+	"github/ricardoalmeida/polyglot/go/src/basetobase"
 	"testing"
 )
 

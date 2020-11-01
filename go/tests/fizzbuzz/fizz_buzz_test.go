@@ -3,7 +3,7 @@ package fizzbuzz_test
 import (
 	"bytes"
 	"fmt"
-	"github/ricardoalmeida/polyglot/src/fizzbuzz"
+	"github/ricardoalmeida/polyglot/go/src/fizzbuzz"
 	"io"
 	"os"
 	"testing"

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/ricardoalmeida/polyglot/numinlist"
+	"github/ricardoalmeida/polyglot/go/src/numinlist"
 )
 
 func TestIterate(t *testing.T) {

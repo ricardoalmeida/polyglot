@@ -2,7 +2,7 @@ package sum_test
 
 import (
 	"fmt"
-	"github/ricardoalmeida/polyglot/src/sum"
+	"github/ricardoalmeida/polyglot/go/src/sum"
 	"testing"
 )
 
