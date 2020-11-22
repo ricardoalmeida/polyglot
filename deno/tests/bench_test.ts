@@ -1,4 +1,7 @@
-import { runBenchmarks, bench } from "https://deno.land/std/testing/bench.ts";
+import {
+  bench,
+  runBenchmarks,
+} from "https://deno.land/std@0.78.0/testing/bench.ts";
 import { iterate, std } from "../src/num_in_list.ts";
 
 bench({
