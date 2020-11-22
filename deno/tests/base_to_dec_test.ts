@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
+import { assertEquals } from "https://deno.land/std@0.78.0/testing/asserts.ts";
 import { iterate, std } from "../src/base_to_dec.ts";
 
 Deno.test("converts value to dec", () => {

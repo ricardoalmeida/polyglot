@@ -1,5 +1,5 @@
-import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
-import { iterate, std, recursive } from "../src/dec_to_base.ts";
+import { assertEquals } from "https://deno.land/std@0.78.0/testing/asserts.ts";
+import { iterate, recursive, std } from "../src/dec_to_base.ts";
 
 Deno.test("iterate converts dec to base", () => {
   for (const tc of TESTS) {
