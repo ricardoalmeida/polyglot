@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
+import { assertEquals } from "https://deno.land/std@0.78.0/testing/asserts.ts";
 import { iterate } from "../src/fizz_buzz.ts";
 
 Deno.test("returns fizz buzz", () => {

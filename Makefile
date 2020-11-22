@@ -8,7 +8,7 @@ ruby_test:
 	@cd ruby && rubocop && rake test
 
 deno_test:
-	@cd typescript && deno test
+	@cd deno && deno test
 
 rust_test:
 	@cd rust && cargo test
