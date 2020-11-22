@@ -33,8 +33,5 @@ jobs:
             dep ensure
         fi
 
-    - name: Build
-      run: cd go && go build -v .
-
     - name: Test
-      run: cd go && go test -v .
+      run: cd go && go test -v ./...
